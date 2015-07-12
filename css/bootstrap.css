@@ -4619,7 +4619,14 @@ a.badge:focus {
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
-.jumbotron {
+
+.picture_show
+{
+  background: url("pictures/tierradenadie.jpg");
+}
+
+.jumbotron 
+{
   padding: 30px 15px;
   margin-bottom: 30px;
   color: inherit;
