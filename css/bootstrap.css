@@ -4631,10 +4631,12 @@ a.badge:focus {
   margin-bottom: 30px;
   color: inherit;
   background-color: #eee;
+  text-shadow: 1px 1px #ffffff;
 }
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;
+
 }
 .jumbotron p {
   margin-bottom: 15px;
