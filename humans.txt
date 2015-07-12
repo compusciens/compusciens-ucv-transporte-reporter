@@ -3,7 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>  Francisco Mora -- -- Pedro Fernandes -- --
+    <name> -- <role> -- <twitter>
+    Francisco Mora -- --
+    Pedro Fernandes -- --
     Ruben Maza -- -- rubenyai
 
 # THANKS
