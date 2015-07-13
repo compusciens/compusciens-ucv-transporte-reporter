@@ -5,6 +5,9 @@ bn
 www.compusciens.org.ve
 
 Equipo desarrollo:
+
 -Francisco Mora
+
 -Pedro Fernandes
+
 -Ruben Maza
