@@ -1,6 +1,6 @@
 /*
-SQLyog Community v11.5 (32 bit)
-MySQL - 5.6.19-log : Database - ptransporteucv
+SQLyog Community v12.09 (64 bit)
+MySQL - 5.6.21 : Database - ptransporteucv
 *********************************************************************
 */
 
@@ -12,10 +12,6 @@ MySQL - 5.6.19-log : Database - ptransporteucv
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`ptransporteucv` /*!40100 DEFAULT CHARACTER SET utf8 */;
-
-USE `ptransporteucv`;
-
 /*Table structure for table `actividad` */
 
 DROP TABLE IF EXISTS `actividad`;
@@ -124,12 +120,13 @@ CREATE TABLE `usuario` (
   `id` varchar(15) NOT NULL COMMENT 'El id del usuario',
   `password` varchar(41) NOT NULL COMMENT 'La clave encriptada',
   `permisos` varchar(60) NOT NULL COMMENT 'El id de los permisos correspondientes',
+  `permisos_r` varchar(60) NOT NULL COMMENT 'El id de los permisos para reporter',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /*Data for the table `usuario` */
 
-insert  into `usuario`(`id`,`password`,`permisos`) values ('admin','d033e22ae348aeb5660fc2140aec35850c4da997','R.W/R.C.M.D/R.C.M.S.D'),('andre','eebf0871c30b9dbb4560b2ed9c5987bc2c8a8ef6','R/R.C/R.M.D/'),('josue','8cb2237d0679ca88db6464eac60da96345513964','R/R.D/R/'),('krys','8cb2237d0679ca88db6464eac60da96345513964','R/R.D/R.S'),('rubenyai','0d552caec67cd2ccfbd4344c2b72e6a35ee982b8','-/R/.S/');
+insert  into `usuario`(`id`,`password`,`permisos`,`permisos_r`) values ('admin','d033e22ae348aeb5660fc2140aec35850c4da997','R.W/R.C.M.D/R.C.M.S.D',''),('andre','eebf0871c30b9dbb4560b2ed9c5987bc2c8a8ef6','R/R.C/R.M.D/',''),('josue','8cb2237d0679ca88db6464eac60da96345513964','R/R.D/R/',''),('krys','8cb2237d0679ca88db6464eac60da96345513964','R/R.D/R.S',''),('rubenyai','0d552caec67cd2ccfbd4344c2b72e6a35ee982b8','-/R/.S/','');
 
 /*Table structure for table `viaje` */
 
